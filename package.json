@@ -1,0 +1,12 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "natorus for every outdoors lover",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css --watch"
+
+  },
+  "author": "Ruslan Bairamovi",
+  "license": "ISC"
+}

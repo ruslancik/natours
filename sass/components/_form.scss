@@ -1,0 +1,103 @@
+.form {
+
+    &__group:not(:last-child) {
+        margin-bottom: 0rem;
+    }
+
+    &__input {
+        border:none;
+        outline:none;
+        width:90%;
+        padding:2rem;
+        background-color:   rgba(255, 255, 255, 0.5);
+        border-bottom: 3px solid transparent;
+        border-radius: 2px;
+        font-family: inherit;
+        font-size: 1.5rem;
+        font-weight: 700;
+        display: block;
+        transition: all .2s;
+
+
+
+        &:focus {
+            border-bottom: 3px solid $color-primary;
+            box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2)
+            
+         }
+
+        &:focus:invalid {
+            border-bottom: 3px solid $color-secondary-2;
+        }
+
+        
+    }
+
+    &__label {
+        padding: 0 2rem;
+        font-size: 1.3rem;
+        font-weight: 700;
+        transition: all .2s;
+        display: block;
+    }
+
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+
+    &__radio {
+        &-group {
+            display: inline-block;
+            padding: 2rem;
+            font-size: 1.5rem;
+            font-family: inherit;
+            font-weight: 700;
+
+        }
+
+        &-label {
+            cursor: pointer;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+
+        &-button {
+            display: inline-block;
+            height: 3rem;
+            width: 3rem;
+            border: 5px solid $color-primary;
+            border-radius: 50%;
+            position: absolute;
+            top:-.5rem;
+            left: -1.5rem;
+            
+            &:after {
+                content: "";
+                display: block;
+                width: 1.5rem;
+                height: 1.5rem;
+                background-color: $color-primary;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform:translate(-50%,-50%);
+                opacity: 0;
+                transition: all .2s;
+            }
+        }
+
+        &-input {
+            display: none;
+        }
+
+        &-input:checked ~ &-label &-button:after {
+            opacity: 1;
+        }
+
+    }
+
+
+}
