@@ -1,5 +1,11 @@
 .composition {
     position: relative;
+    
+
+    @include respond(tab-port){
+        margin-bottom: 25rem !important;
+        z-index: 7777;
+       }
 
     &__photo {
         width: 55%;
