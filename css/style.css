@@ -1,3 +1,26 @@
+/*
+0-600px     : Phone
+
+600-900px   : Tablet portrait
+
+900-1200px  : Tablet landscape
+
+(1200-1800) :   is where our normal style applied
+
+1800+       : Big desktop
+
+
+--- $breakpoint argument choise
+
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+
+1em = 16px
+
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -436,7 +459,7 @@ body {
 }
 .form__radio-group {
   display: inline-block;
-  padding: 2rem;
+  padding: 1.2rem;
   font-size: 1.5rem;
   font-family: inherit;
   font-weight: 700;
