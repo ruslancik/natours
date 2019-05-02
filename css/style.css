@@ -194,11 +194,21 @@ body {
 }
 
 .u-margin-bottom-medium {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem !important;
+}
+@media (max-width: 56.25em) {
+  .u-margin-bottom-medium {
+    margin-bottom: 2rem !important;
+  }
 }
 
 .u-margin-bottom-big {
-  margin-bottom: 8rem;
+  margin-bottom: 8rem !important;
+}
+@media (max-width: 56.25em) {
+  .u-margin-bottom-big {
+    padding: 6rem !important;
+  }
 }
 
 .bg__video {
@@ -951,6 +961,11 @@ body {
   padding: 20rem 0;
   margin-top: -20vh;
 }
+@media (max-width: 56.25em) {
+  .section-about {
+    padding: 18rem 0;
+  }
+}
 
 .section-features {
   margin-top: -20vh;
@@ -958,6 +973,11 @@ body {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
   transform: skewY(-7deg);
+}
+@media (max-width: 56.25em) {
+  .section-features {
+    padding: 14rem 0;
+  }
 }
 .section-features > * {
   transform: skewY(7deg);
@@ -968,10 +988,20 @@ body {
   padding: 20rem 0 15rem 0;
   margin-top: -10rem;
 }
+@media (max-width: 56.25em) {
+  .section-tours {
+    padding: 16rem 0 12rem 0;
+  }
+}
 
 .section-stories {
   position: relative;
   padding: 15rem 0;
+}
+@media (max-width: 56.25em) {
+  .section-stories {
+    padding: 12rem 0;
+  }
 }
 
 .section-book {

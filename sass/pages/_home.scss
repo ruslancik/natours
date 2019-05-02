@@ -2,6 +2,10 @@
     background-color: $color-grey-light-1;
     padding: 20rem 0;
     margin-top: -20vh;
+
+    @include respond(tab-port){
+        padding: 18rem 0;
+    }
 }
 
 .section-features {
@@ -15,21 +19,33 @@
          background-size: cover;
          transform: skewY(-7deg);
 
+         @include respond(tab-port){
+            padding: 14rem 0;
+        }
+
          & >* {
              transform: skewY(7deg);
          }
+
+         
 }
 
 .section-tours {
     background-color: $color-grey-light-1;
     padding: 20rem 0 15rem 0;
     margin-top: -10rem;
+    @include respond(tab-port){
+        padding: 16rem 0 12rem 0;
+    }
 }
 
 .section-stories {
     position: relative;
     padding: 15rem 0;
  //   background-color: rgba($color-grey-light-1, .7);
+ @include respond(tab-port){
+        padding: 12rem 0;
+    }
 }
 
 .section-book {
