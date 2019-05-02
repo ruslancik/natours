@@ -4,7 +4,8 @@
 
     @include respond(tab-port){
         max-width: 50rem;
-       }
+
+    }
 
     &:not(:last-child) {
         margin-bottom: $mar-vertical;
