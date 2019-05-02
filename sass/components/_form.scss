@@ -17,7 +17,10 @@
         font-weight: 700;
         display: block;
         transition: all .2s;
-
+        
+        @include respond(tab-port){
+            width: 100%;
+        }
 
 
         &:focus {

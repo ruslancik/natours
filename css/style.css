@@ -428,7 +428,7 @@ body {
 @media (max-width: 56.25em) {
   .composition {
     margin-bottom: 25rem !important;
-    z-index: 7777;
+    z-index: 999;
   }
 }
 .composition__photo {
@@ -500,6 +500,11 @@ body {
   font-weight: 700;
   display: block;
   transition: all 0.2s;
+}
+@media (max-width: 56.25em) {
+  .form__input {
+    width: 100%;
+  }
 }
 .form__input:focus {
   border-bottom: 3px solid #55c57a;
@@ -643,8 +648,26 @@ body {
   backface-visibility: hidden;
   background-color: rgba(255, 255, 255, 0.7);
 }
+@media (max-width: 56.25em) {
+  .story {
+    width: 100%;
+    padding: 4rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .story {
+    width: 100%;
+    padding: 3rem;
+    transform: skewX(-4deg);
+  }
+}
 .story > * {
   transform: skewX(9deg);
+}
+@media (max-width: 37.5em) {
+  .story > * {
+    transform: skewX(4deg);
+  }
 }
 .story__shape {
   float: left;
@@ -660,6 +683,7 @@ body {
   transform: translateY(2rem) scale(1.8);
   transition: all 0.5s;
   backface-visibility: hidden;
+  padding-right: 1rem;
 }
 .story__caption {
   position: absolute;
@@ -677,6 +701,7 @@ body {
 }
 .story__text {
   font-size: 1.6rem;
+  padding-left: 3rem;
 }
 .story:hover .story__caption {
   opacity: 1;
@@ -802,6 +827,7 @@ body {
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-position: top;
   position: relative;
@@ -1010,16 +1036,25 @@ body {
 }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, transparent 50%), url(/img/nat-10.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 50%, transparent 50%), url(../img/nat-10.jpg);
   background-size: 100%;
   background-size: cover;
-  height: 50rem;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
+}
+@media (max-width: 56.25em) {
+  .book {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%), url(../img/nat-10.jpg);
+  }
 }
 .book__form {
   width: 50%;
   padding: 2rem;
+}
+@media (max-width: 56.25em) {
+  .book__form {
+    width: 100%;
+  }
 }
 
 .form div h2 {

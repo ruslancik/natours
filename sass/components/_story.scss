@@ -9,8 +9,25 @@
     backface-visibility: hidden;
     background-color: rgba(255, 255, 255, 0.7);
 
+    @include respond(tab-port){
+        width: 100%;
+        padding: 4rem;
+        
+    }
+    @include respond(phone){
+        width: 100%;
+        padding: 3rem;
+        transform: skewX(-4deg);
+  
+    }
+
     & >* {
         transform: skewX(9deg);
+        
+        @include respond(phone){
+        transform: skewX(4deg);
+      
+        }
     }
 
     &__shape {
@@ -29,6 +46,7 @@
         transform: translateY(2rem) scale(1.8);
         transition: all .5s;
         backface-visibility: hidden;
+        padding-right: 1rem;
 
     }
     &__caption {
@@ -48,6 +66,7 @@
 
     &__text {
         font-size: 1.6rem; //default
+        padding-left:3rem;
     }
 
     &:hover &__caption {
